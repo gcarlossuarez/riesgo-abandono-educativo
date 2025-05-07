@@ -1,0 +1,9 @@
+sequenceDiagram
+    Docente->>+Servidor: Sube CSV (nuevos datos)
+    Servidor->>+Modelo: ¿Suficientes datos nuevos?
+    alt ≥50 registros
+        Modelo-->>-Servidor: Reentrenar con datos combinados
+        Servidor->>+Modelo: Evaluar mejora
+        Modelo-->>-Servidor: Actualizar si mejora >0%
+    end
+    Servidor-->>-Docente: Devolver predicciones

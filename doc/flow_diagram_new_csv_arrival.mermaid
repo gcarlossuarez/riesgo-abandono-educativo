@@ -1,0 +1,8 @@
+graph LR
+    A[CSV Nuevo] --> B[servidor.py]
+    B --> C{¿Modelo existe?}
+    C -->|No| D[Ejecutar Módulo 2]
+    C -->|Sí| E[Usar modelo]
+    B --> F{¿Datos suficientes?}
+    F -->|Sí| G[Reentrenar Módulo 2 interno]
+    F -->|No| H[Predicción directa]

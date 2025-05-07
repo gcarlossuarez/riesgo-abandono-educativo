@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Promedio Notas &le; 52.0<br/>gini = 0.493<br/>samples = 31<br/>value = [28.0, 22.0]<br/>class = No Riesgo>, fillcolor="#f9e4d5"] ;
+1 [label=<gini = 0.0<br/>samples = 7<br/>value = [0, 14]<br/>class = Sí Riesgo>, fillcolor="#399de5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Asistencia (%) &le; 60.0<br/>gini = 0.346<br/>samples = 24<br/>value = [28, 8]<br/>class = No Riesgo>, fillcolor="#eca572"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<gini = 0.0<br/>samples = 3<br/>value = [0, 5]<br/>class = Sí Riesgo>, fillcolor="#399de5"] ;
+2 -> 3 ;
+4 [label=<Asistencia (%) &le; 76.0<br/>gini = 0.175<br/>samples = 21<br/>value = [28, 3]<br/>class = No Riesgo>, fillcolor="#e88e4e"] ;
+2 -> 4 ;
+5 [label=<Participación_encoded &le; 0.5<br/>gini = 0.32<br/>samples = 6<br/>value = [8, 2]<br/>class = No Riesgo>, fillcolor="#eca06a"] ;
+4 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 4<br/>value = [7, 0]<br/>class = No Riesgo>, fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label=<Tareas Entregadas (10) &le; 5.5<br/>gini = 0.444<br/>samples = 2<br/>value = [1, 2]<br/>class = Sí Riesgo>, fillcolor="#9ccef2"] ;
+5 -> 7 ;
+8 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 2]<br/>class = Sí Riesgo>, fillcolor="#399de5"] ;
+7 -> 8 ;
+9 [label=<gini = 0.0<br/>samples = 1<br/>value = [1, 0]<br/>class = No Riesgo>, fillcolor="#e58139"] ;
+7 -> 9 ;
+10 [label=<Tareas Entregadas (10) &le; 7.5<br/>gini = 0.091<br/>samples = 15<br/>value = [20, 1]<br/>class = No Riesgo>, fillcolor="#e68743"] ;
+4 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 13<br/>value = [18, 0]<br/>class = No Riesgo>, fillcolor="#e58139"] ;
+10 -> 11 ;
+12 [label=<Asistencia (%) &le; 88.0<br/>gini = 0.444<br/>samples = 2<br/>value = [2, 1]<br/>class = No Riesgo>, fillcolor="#f2c09c"] ;
+10 -> 12 ;
+13 [label=<gini = 0.0<br/>samples = 1<br/>value = [2, 0]<br/>class = No Riesgo>, fillcolor="#e58139"] ;
+12 -> 13 ;
+14 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 1]<br/>class = Sí Riesgo>, fillcolor="#399de5"] ;
+12 -> 14 ;
+}

@@ -1,0 +1,14 @@
+|--- Promedio Notas <= 50.40
+|   |--- class: 1
+|--- Promedio Notas >  50.40
+|   |--- Asistencia (%) <= 61.50
+|   |   |--- Tareas Entregadas (10) <= 6.00
+|   |   |   |--- Asistencia (%) >  65.50
+|   |   |   |   |--- class: 1
+|   |   |--- Tareas Entregadas (10) >  6.00
+|   |   |   |--- class: 1
+|   |--- Asistencia (%) >  61.50
+|   |   |--- Asistencia (%) <= 90.00
+|   |   |   |--- class: 0
+|   |   |--- Asistencia (%) >  90.00
+|   |   |   |--- class: 0

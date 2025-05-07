@@ -1,0 +1,9 @@
+sequenceDiagram
+    Docente->>+Servidor: Sube nuevo CSV (n=60)
+    Servidor->>+Modelo: ¿Reentrenar? (60 > 50)
+    Modelo->>+Histórico: Cargar datos anteriores
+    Histórico-->>-Modelo: Datos combinados (n=210)
+    Modelo->>+Módulo2: entrenar_modelo()
+    Módulo2-->>-Modelo: Nuevo modelo
+    Modelo-->>-Servidor: Modelo actualizado
+    Servidor-->>-Docente: Resultados con nuevo modelo

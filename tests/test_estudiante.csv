@@ -1,0 +1,4 @@
+ID_Estudiante,Nombre,Asistencia (%),Promedio Notas,Tareas Entregadas (10),Participación,Estado Final
+EST001,Juan Pérez,85,78,8,Alta,Aprobado
+EST002,Maria Gómez,45,52,2,Baja,Reprobado
+EST003,Carlos López,92,88,9,Alta,Aprobado
